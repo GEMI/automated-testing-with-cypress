@@ -4,7 +4,7 @@
   "description": "Automated tests with cypress examples",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "./node_modules/.bin/cypress open"
   },
   "keywords": [
     "cypress",

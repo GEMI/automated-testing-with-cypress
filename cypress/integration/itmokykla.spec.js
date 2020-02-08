@@ -5,8 +5,13 @@ context('ITMokykla', () => {
         cy.visit('https://itmokykla.lt/testing/one.html')
     })
 
-    it('Enter username into user form', () => {
-        cy.get('#name')
-          .type('Gediminas').should('have.value', 'Gediminas')
+    it('Successfully register new user', () => {
+        cy.get('#name').type('Gediminas')
+
+        cy.get('[type="radio"][value="female"]').check()
+
+        cy.get('.btn-success.btn-lg').click()
+
+        cy.get('.alert.alert-success').should('have.text', 'Registration successfull')
     })
 })
