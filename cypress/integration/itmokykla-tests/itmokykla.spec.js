@@ -15,6 +15,7 @@ context('ITMokykla', () => {
         cy.get('.alert.alert-success').should('have.text', 'Registration successfull')
     })
 
+    // use online text generator random.org
     it('Should not allow comments longer than 250 symbols', () => {
         cy.get('#name').type('Christine')
 
