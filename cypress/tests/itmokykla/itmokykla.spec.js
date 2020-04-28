@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-context('ITMokykla', () => {
+context('ITMokykla - Lesson 1 Tests', () => {
     beforeEach(() => {
         cy.visit('https://itmokykla.lt/testing/one.html')
     })
